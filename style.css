@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(171, 169, 177);
+    color: #fff;
+
+}
+
+/* Base styles for the fixed header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo styling */
+.nav-logo img {
+    height: 80px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+/* Navigation bar styling */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right a {
+    color: none;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    color: black;
+    border-radius: 50px;
+    background-color: rgb(171, 169, 177);
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.nav-right a:after {
+    position: absolute;
+    content: "";
+    background: rgb(29, 28, 28);
+    background: linear-gradient(black, #ffffff, #1e13b1);
+    width: 104%;
+    height: 110%;
+    left: -2%;
+    top: -5%;
+    border-radius: 50px;
+    transform: scaleY(0);
+    z-index: -1;
+    animation: rotate 1.5s linear infinite;
+    transition: transform 0.3s ease;
+}
+
+.nav-right a:hover:after {
+    transform: scaleY(1);
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('image\ copy.png');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Hero-Section {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+
+}
+
+
+/* Style the overlay text */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* Adjust the text color as needed */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional: add a dark overlay to improve text readability */
+}
+
+.overlay h1 {
+    font-size: 5rem;
+    /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.5rem;
+    /* Adjust font size as needed */
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: black;
+    background-color: #d6d1eb;
+    /* Adjust button color as needed */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    /* Remove underline from link */
+    display: inline-block;
+}
+
+.hero-button:hover {
+    background-color: #a9a5db;
+    /* Adjust button hover color as needed */
+}
+
+.HowItWorks {
+    background-image: linear-gradient(to bottom right, rgb(184, 179, 179), #de75f8, rgb(255, 64, 191), #de75f8, rgb(177, 171, 171));
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.works {
+    background-image: linear-gradient(to bottom right, rgb(184, 179, 179), rgb(122, 119, 145), rgb(116, 145, 158));
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.works h2 {
+    font-size: 4rem;
+}
+
+.works p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: rgb(205, 206, 214);
+}
+
+
+
+footer {
+    margin-top: 15px;
+}
+
+
+.footer2 {
+    height: 300px;
+    color: #cccccc;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+ul p {
+    font-weight: 600;
+}
+
+ul {
+    margin-top: 30px;
+}
