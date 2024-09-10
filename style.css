@@ -84,7 +84,7 @@ nav {
 }
 
 .parallax {
-    background-image: url('../images/image\ copy.png');
+    background-image: url('image\ copy.png');
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -157,7 +157,9 @@ nav {
 
 }
 
-.works , .about-section, .faq-section {
+.works,
+.about-section,
+.faq-section {
     background-image: linear-gradient(to bottom right, rgb(184, 179, 179), rgb(122, 119, 145), rgb(116, 145, 158));
     padding: 20px;
     text-align: center;
@@ -191,17 +193,21 @@ nav {
     margin-bottom: 1rem;
     font-size: 3rem;
 }
-.faq-section h2{
+
+.faq-section h2 {
     font-size: 3rem;
 }
+
 .faq-item h3 {
     font-size: 1.5rem;
     color: rgb(205, 206, 214);
 }
+
 .faq-section p {
     font-size: 20px;
     color: rgb(205, 206, 214);
 }
+
 .about-section p {
     text-align: center;
     font-size: 25px;
