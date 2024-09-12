@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: linear-gradient(to bottom right, rgb(184, 179, 179), rgb(122, 119, 145), rgb(116, 145, 158));
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .box {
+        text-align: center;
+        padding: 40px;
+        background-color: #fff;
+        border-radius: 16px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .box:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    h2 {
+        margin-bottom: 30px;
+        font-size: 24px;
+        color: #333;
+        letter-spacing: 1px;
+    }
+
+    .buttons {
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 15px 30px;
+        font-size: 18px;
+        color: black;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        background-size: 200% auto;
+        transition: background-position 0.4s, transform 0.3s ease;
+    }
+
+    .btn.yes {
+        background-color: rgb(171, 169, 177);
+    }
+
+    .btn.no {
+        background-color: rgb(171, 169, 177);
+    }
+
+    .btn:hover {
+        background-position: right center;
+        transform: scale(1.05);
+    }
+</style>
+
+<body>
+    <div class="box">
+        <h2>Are you ready to proceed?</h2>
+        <div class="buttons">
+            <button class="btn yes">With DataSet</button>
+            <button class="btn no">Without DataSet</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
